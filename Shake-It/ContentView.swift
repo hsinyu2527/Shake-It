@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+  let moodTypes: [MoodType] = Bundle.main.decode(form: "moodTypes.json")
+  let moods: [Mood] = Bundle.main.decode(form: "moods.json")
+  let colors: [CustomColor] = Bundle.main.decode(form: "appColors.json")
+  
   var body: some View {
     NavigationStack {
       TabView {
@@ -29,8 +33,7 @@ struct ContentView: View {
       .navigationBarTitleDisplayMode(.inline)
       .toolbar {
         ToolbarItem(placement: .principal) {
-          Text("Shake-It!")
-            .font(.system(.title, design: .rounded, weight: .bold).lowercaseSmallCaps())
+          appInfo.formattedName
         }
         
         ToolbarItem {

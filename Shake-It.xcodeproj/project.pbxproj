@@ -12,6 +12,15 @@
 		B38FCEE02C19E64D00D6F6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38FCEDF2C19E64D00D6F6D3 /* Assets.xcassets */; };
 		B38FCEE32C19E64D00D6F6D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38FCEE22C19E64D00D6F6D3 /* Preview Assets.xcassets */; };
 		B38FCEEA2C19FB5500D6F6D3 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCEE92C19FB5500D6F6D3 /* ColorTheme.swift */; };
+		B38FCEF02C1ACC8600D6F6D3 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCEEF2C1ACC8600D6F6D3 /* Mood.swift */; };
+		B38FCEF22C1AD3AB00D6F6D3 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCEF12C1AD3AB00D6F6D3 /* CustomColor.swift */; };
+		B38FCEF42C1AD80C00D6F6D3 /* moodTypes.json in Resources */ = {isa = PBXBuildFile; fileRef = B38FCEF32C1AD80C00D6F6D3 /* moodTypes.json */; };
+		B38FCEF82C1AE8D900D6F6D3 /* BundleCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCEF72C1AE8D900D6F6D3 /* BundleCodec.swift */; };
+		B38FCEFA2C1AED3300D6F6D3 /* moods.json in Resources */ = {isa = PBXBuildFile; fileRef = B38FCEF92C1AED3300D6F6D3 /* moods.json */; };
+		B38FCEFF2C1B122600D6F6D3 /* appColors.json in Resources */ = {isa = PBXBuildFile; fileRef = B38FCEFE2C1B122600D6F6D3 /* appColors.json */; };
+		B38FCF012C1B15E900D6F6D3 /* MoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCF002C1B15E900D6F6D3 /* MoodButton.swift */; };
+		B38FCF032C1B37FD00D6F6D3 /* appInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCF022C1B37FD00D6F6D3 /* appInfo.swift */; };
+		B38FCF052C1B39A900D6F6D3 /* MakingDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCF042C1B39A900D6F6D3 /* MakingDrinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +30,15 @@
 		B38FCEDF2C19E64D00D6F6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B38FCEE22C19E64D00D6F6D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B38FCEE92C19FB5500D6F6D3 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		B38FCEEF2C1ACC8600D6F6D3 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		B38FCEF12C1AD3AB00D6F6D3 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		B38FCEF32C1AD80C00D6F6D3 /* moodTypes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = moodTypes.json; path = "Shake-It/moodTypes.json"; sourceTree = SOURCE_ROOT; };
+		B38FCEF72C1AE8D900D6F6D3 /* BundleCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleCodec.swift; sourceTree = "<group>"; };
+		B38FCEF92C1AED3300D6F6D3 /* moods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = moods.json; path = "Shake-It/moods.json"; sourceTree = SOURCE_ROOT; };
+		B38FCEFE2C1B122600D6F6D3 /* appColors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appColors.json; sourceTree = "<group>"; };
+		B38FCF002C1B15E900D6F6D3 /* MoodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodButton.swift; sourceTree = "<group>"; };
+		B38FCF022C1B37FD00D6F6D3 /* appInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appInfo.swift; sourceTree = "<group>"; };
+		B38FCF042C1B39A900D6F6D3 /* MakingDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingDrinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +72,11 @@
 			isa = PBXGroup;
 			children = (
 				B38FCEDB2C19E64B00D6F6D3 /* Shake-ItApp.swift */,
-				B38FCEDD2C19E64B00D6F6D3 /* ContentView.swift */,
-				B38FCEE92C19FB5500D6F6D3 /* ColorTheme.swift */,
 				B38FCEDF2C19E64D00D6F6D3 /* Assets.xcassets */,
+				B38FCEEE2C1ACC3300D6F6D3 /* Model */,
+				B38FCEED2C1ACC1A00D6F6D3 /* View */,
+				B38FCEF62C1AE86C00D6F6D3 /* Controller */,
+				B38FCEFB2C1AED4F00D6F6D3 /* Data */,
 				B38FCEE12C19E64D00D6F6D3 /* Preview Content */,
 			);
 			path = "Shake-It";
@@ -68,6 +88,45 @@
 				B38FCEE22C19E64D00D6F6D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B38FCEED2C1ACC1A00D6F6D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B38FCEDD2C19E64B00D6F6D3 /* ContentView.swift */,
+				B38FCF042C1B39A900D6F6D3 /* MakingDrinkView.swift */,
+				B38FCF002C1B15E900D6F6D3 /* MoodButton.swift */,
+				B38FCEE92C19FB5500D6F6D3 /* ColorTheme.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B38FCEEE2C1ACC3300D6F6D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B38FCEEF2C1ACC8600D6F6D3 /* Mood.swift */,
+				B38FCEF12C1AD3AB00D6F6D3 /* CustomColor.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B38FCEF62C1AE86C00D6F6D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B38FCEF72C1AE8D900D6F6D3 /* BundleCodec.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B38FCEFB2C1AED4F00D6F6D3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B38FCF022C1B37FD00D6F6D3 /* appInfo.swift */,
+				B38FCEF32C1AD80C00D6F6D3 /* moodTypes.json */,
+				B38FCEF92C1AED3300D6F6D3 /* moods.json */,
+				B38FCEFE2C1B122600D6F6D3 /* appColors.json */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +187,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38FCEFA2C1AED3300D6F6D3 /* moods.json in Resources */,
+				B38FCEFF2C1B122600D6F6D3 /* appColors.json in Resources */,
 				B38FCEE32C19E64D00D6F6D3 /* Preview Assets.xcassets in Resources */,
 				B38FCEE02C19E64D00D6F6D3 /* Assets.xcassets in Resources */,
+				B38FCEF42C1AD80C00D6F6D3 /* moodTypes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38FCEF82C1AE8D900D6F6D3 /* BundleCodec.swift in Sources */,
+				B38FCF012C1B15E900D6F6D3 /* MoodButton.swift in Sources */,
+				B38FCEF02C1ACC8600D6F6D3 /* Mood.swift in Sources */,
 				B38FCEEA2C19FB5500D6F6D3 /* ColorTheme.swift in Sources */,
+				B38FCF052C1B39A900D6F6D3 /* MakingDrinkView.swift in Sources */,
 				B38FCEDE2C19E64B00D6F6D3 /* ContentView.swift in Sources */,
+				B38FCF032C1B37FD00D6F6D3 /* appInfo.swift in Sources */,
+				B38FCEF22C1AD3AB00D6F6D3 /* CustomColor.swift in Sources */,
 				B38FCEDC2C19E64B00D6F6D3 /* Shake-ItApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

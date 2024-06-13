@@ -1,0 +1,38 @@
+[
+  {
+    "name": "憤怒",
+    "colorName": "red",
+  },
+  {
+    "name": "煩躁",
+    "colorName": "orange",
+  },
+  {
+    "name": "溫暖",
+    "colorName": "yellow",
+  },
+  {
+    "name": "愉快",
+    "colorName": "green",
+  },
+  {
+    "name": "恐懼",
+    "colorName": "mint",
+  },
+  {
+    "name": "平靜",
+    "colorName": "teal",
+  },
+  {
+    "name": "悲傷",
+    "colorName": "blue",
+  },
+  {
+    "name": "抑鬱",
+    "colorName": "indigo",
+  },
+  {
+    "name": "厭世",
+    "colorName": "gray",
+  },
+]
