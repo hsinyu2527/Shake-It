@@ -12,6 +12,8 @@ struct ContentView: View {
   let moods: [Mood] = Bundle.main.decode(form: "moods.json")
   let colors: [CustomColor] = Bundle.main.decode(form: "appColors.json")
   
+  @State private var addedMoods = [Mood]()
+  
   var body: some View {
     NavigationStack {
       TabView {
@@ -20,7 +22,7 @@ struct ContentView: View {
             Image(systemName: "calendar")
           }
         
-        Text("Make a Drink")
+        MakingDrinkView(moods: moods, addedMoods: $addedMoods)
           .tabItem {
             Image(systemName: "wineglass")
           }
