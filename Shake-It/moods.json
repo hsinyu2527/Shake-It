@@ -7,51 +7,51 @@
   {
     "type": "煩躁",
     "name": "燥",
-    "colorName": "redLight5",
+    "colorName": "orangeLight5",
   },
   {
     "type": "溫暖",
     "name": "幸福",
-    "colorName": "redLight5",
+    "colorName": "yellowLight5",
   },
   {
     "type": "溫暖",
     "name": "喜極而泣",
-    "colorName": "redLight5",
+    "colorName": "yellowDark5",
   },
   {
     "type": "愉快",
     "name": "爽",
-    "colorName": "redLight5",
+    "colorName": "greenLight5",
   },
   {
     "type": "恐懼",
     "name": "害怕",
-    "colorName": "redLight5",
+    "colorName": "mintLight5",
   },
   {
     "type": "平靜",
     "name": "平靜",
-    "colorName": "redLight5",
+    "colorName": "tealLight5",
   },
   {
     "type": "悲傷",
     "name": "難過",
-    "colorName": "redLight5",
+    "colorName": "blueLight5",
   },
   {
     "type": "抑鬱",
     "name": "憂愁",
-    "colorName": "redLight5",
+    "colorName": "indigoLight5",
   },
   {
     "type": "抑鬱",
     "name": "萬念俱灰",
-    "colorName": "redLight5",
+    "colorName": "indigoLight1",
   },
   {
     "type": "厭世",
     "name": "想躺平",
-    "colorName": "redLight5",
+    "colorName": "grayLight5",
   },
 ]
