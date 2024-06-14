@@ -11,6 +11,8 @@ struct MakingDrinkView: View {
   let moods: Moods
   
   @Binding var addedMoods: [MoodItem]
+  @State private var isShaking = false
+  @State private var isPouring = false
   
   var body: some View {
     VStack {
@@ -55,7 +57,7 @@ struct MakingDrinkView: View {
         
         HStack(spacing: 30) {
           Button("倒掉重來") {
-            addedMoods.removeAll()
+            isPouring = true
           }
           .padding()
           .foregroundStyle(.white)
@@ -63,12 +65,34 @@ struct MakingDrinkView: View {
           .clipShape(.buttonBorder)
           
           Button("搖一搖！") {
-            
+            isShaking = true
           }
           .padding()
           .foregroundStyle(.white)
           .background(.appColor)
           .clipShape(.buttonBorder)
+        }
+        .alert("要搖一搖了嗎？", isPresented: $isShaking) {
+          Button("再想想") {
+            
+          }
+          
+          Button("搖！！") {
+            addedMoods.removeAll()
+          }
+        } message: {
+          Text("每天都只能搖一杯心情，\n一旦確認就不可以再更改囉～")
+        }
+        .alert("要倒掉重來嗎？", isPresented: $isPouring) {
+          Button("再想想") {
+            
+          }
+          
+          Button("倒掉！") {
+            addedMoods.removeAll()
+          }
+        } message: {
+          Text("已經投入的心情會全部消失喔～")
         }
       }
       

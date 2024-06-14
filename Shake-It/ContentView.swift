@@ -11,12 +11,13 @@ struct ContentView: View {
   let moodTypes: [MoodType] = Bundle.main.decode(form: "moodTypes.json")
   let colors: [CustomColor] = Bundle.main.decode(form: "appColors.json")
   
+  @State private var selectedTab = "Making Drink"
   @State private var moods = Moods()
   @State private var addedMoods = [MoodItem]()
   
   var body: some View {
     NavigationStack {
-      TabView {
+      TabView(selection: $selectedTab) {
         Text("Calendar")
           .tabItem {
             Image(systemName: "calendar")
@@ -26,6 +27,7 @@ struct ContentView: View {
           .tabItem {
             Image(systemName: "wineglass")
           }
+          .tag("Making Drink")
         
         Text("Statistics")
           .tabItem {
@@ -48,10 +50,11 @@ struct ContentView: View {
       }
     }
     .tint(.appColor)
-//    .onAppear {
+    .onAppear {
+      
 //      UINavigationBar.appearance().scrollEdgeAppearance = UINavigationBarAppearance()
 //      UITabBar.appearance().scrollEdgeAppearance = UITabBarAppearance()
-//    }
+    }
   }
 }
 
