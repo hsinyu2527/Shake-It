@@ -4,16 +4,13 @@
 //
 //  Created by Rui on 2024/6/13.
 //
-//  Credit:
-//  Cup icon created by PLANBSTUDIO - Flaticon
-//
 
 import SwiftUI
 
 struct MakingDrinkView: View {
-  let moods: [Mood]
+  let moods: Moods
   
-  @Binding var addedMoods: [Mood]
+  @Binding var addedMoods: [MoodItem]
   
   var body: some View {
     VStack {
@@ -49,7 +46,7 @@ struct MakingDrinkView: View {
         
         ScrollView {
           LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 10) {
-            ForEach(moods) {
+            ForEach(moods.items) {
               MoodButton(mood: $0, addedMoods: $addedMoods)
             }
           }
@@ -82,8 +79,8 @@ struct MakingDrinkView: View {
 }
 
 #Preview {
-  let moods: [Mood] = Bundle.main.decode(form: "moods.json")
-  @State var addedMoods = [Mood]()
+  @State var moods = Moods()
+  @State var addedMoods = [MoodItem]()
   
   return MakingDrinkView(moods: moods, addedMoods: $addedMoods)
 }

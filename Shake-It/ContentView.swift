@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
   let moodTypes: [MoodType] = Bundle.main.decode(form: "moodTypes.json")
-  let moods: [Mood] = Bundle.main.decode(form: "moods.json")
   let colors: [CustomColor] = Bundle.main.decode(form: "appColors.json")
   
-  @State private var addedMoods = [Mood]()
+  @State private var moods = Moods()
+  @State private var addedMoods = [MoodItem]()
   
   var body: some View {
     NavigationStack {
@@ -35,12 +35,12 @@ struct ContentView: View {
       .navigationBarTitleDisplayMode(.inline)
       .toolbar {
         ToolbarItem(placement: .principal) {
-          appInfo.formattedName
+          AppInfo.formattedName
         }
         
         ToolbarItem {
           NavigationLink {
-            Text("Settings")
+            SettingsView(moods: moods)
           } label: {
             Image(systemName: "gearshape")
           }

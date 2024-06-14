@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct MoodButton: View {
-  let mood: Mood
+  let mood: MoodItem
   
-  @Binding var addedMoods: [Mood]
+  @Binding var addedMoods: [MoodItem]
   
   var body: some View {
     Button {
@@ -30,8 +30,8 @@ struct MoodButton: View {
 }
 
 #Preview {
-  let moods: [Mood] = Bundle.main.decode(form: "moods.json")
-  @State var addedMoods = [Mood]()
+  @State var moods = Moods()
+  @State var addedMoods = [MoodItem]()
   
-  return MoodButton(mood: moods[0], addedMoods: $addedMoods)
+  return MoodButton(mood: moods.items[0], addedMoods: $addedMoods)
 }

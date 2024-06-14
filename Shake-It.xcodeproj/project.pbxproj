@@ -19,8 +19,9 @@
 		B38FCEFA2C1AED3300D6F6D3 /* moods.json in Resources */ = {isa = PBXBuildFile; fileRef = B38FCEF92C1AED3300D6F6D3 /* moods.json */; };
 		B38FCEFF2C1B122600D6F6D3 /* appColors.json in Resources */ = {isa = PBXBuildFile; fileRef = B38FCEFE2C1B122600D6F6D3 /* appColors.json */; };
 		B38FCF012C1B15E900D6F6D3 /* MoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCF002C1B15E900D6F6D3 /* MoodButton.swift */; };
-		B38FCF032C1B37FD00D6F6D3 /* appInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCF022C1B37FD00D6F6D3 /* appInfo.swift */; };
+		B38FCF032C1B37FD00D6F6D3 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCF022C1B37FD00D6F6D3 /* AppInfo.swift */; };
 		B38FCF052C1B39A900D6F6D3 /* MakingDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCF042C1B39A900D6F6D3 /* MakingDrinkView.swift */; };
+		B38FCF072C1C384A00D6F6D3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCF062C1C384A00D6F6D3 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +38,9 @@
 		B38FCEF92C1AED3300D6F6D3 /* moods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = moods.json; path = "Shake-It/moods.json"; sourceTree = SOURCE_ROOT; };
 		B38FCEFE2C1B122600D6F6D3 /* appColors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appColors.json; sourceTree = "<group>"; };
 		B38FCF002C1B15E900D6F6D3 /* MoodButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodButton.swift; sourceTree = "<group>"; };
-		B38FCF022C1B37FD00D6F6D3 /* appInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appInfo.swift; sourceTree = "<group>"; };
+		B38FCF022C1B37FD00D6F6D3 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		B38FCF042C1B39A900D6F6D3 /* MakingDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingDrinkView.swift; sourceTree = "<group>"; };
+		B38FCF062C1C384A00D6F6D3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				B38FCEDD2C19E64B00D6F6D3 /* ContentView.swift */,
 				B38FCF042C1B39A900D6F6D3 /* MakingDrinkView.swift */,
 				B38FCF002C1B15E900D6F6D3 /* MoodButton.swift */,
+				B38FCF062C1C384A00D6F6D3 /* SettingsView.swift */,
 				B38FCEE92C19FB5500D6F6D3 /* ColorTheme.swift */,
 			);
 			name = View;
@@ -121,7 +124,7 @@
 		B38FCEFB2C1AED4F00D6F6D3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				B38FCF022C1B37FD00D6F6D3 /* appInfo.swift */,
+				B38FCF022C1B37FD00D6F6D3 /* AppInfo.swift */,
 				B38FCEF32C1AD80C00D6F6D3 /* moodTypes.json */,
 				B38FCEF92C1AED3300D6F6D3 /* moods.json */,
 				B38FCEFE2C1B122600D6F6D3 /* appColors.json */,
@@ -207,8 +210,9 @@
 				B38FCEF02C1ACC8600D6F6D3 /* Mood.swift in Sources */,
 				B38FCEEA2C19FB5500D6F6D3 /* ColorTheme.swift in Sources */,
 				B38FCF052C1B39A900D6F6D3 /* MakingDrinkView.swift in Sources */,
+				B38FCF072C1C384A00D6F6D3 /* SettingsView.swift in Sources */,
 				B38FCEDE2C19E64B00D6F6D3 /* ContentView.swift in Sources */,
-				B38FCF032C1B37FD00D6F6D3 /* appInfo.swift in Sources */,
+				B38FCF032C1B37FD00D6F6D3 /* AppInfo.swift in Sources */,
 				B38FCEF22C1AD3AB00D6F6D3 /* CustomColor.swift in Sources */,
 				B38FCEDC2C19E64B00D6F6D3 /* Shake-ItApp.swift in Sources */,
 			);

@@ -33,4 +33,21 @@ extension Bundle {
       fatalError("Failed to decode \(file) from bundle: \(error.localizedDescription)")
     }
   }
+  
+  func encode<T: Codable>(to file: String, from data: T) {
+    guard let url = self.url(forResource: file, withExtension: nil) else {
+      fatalError("Failed to locate \(file) in bundle.")
+    }
+    
+    let encoder = JSONEncoder()
+    
+    do {
+      let encodedData = try encoder.encode(data)
+      try encodedData.write(to: url)
+    } catch EncodingError.invalidValue(_, let context) {
+      fatalError("Failed to encode \(file) from your data due to invalid value - \(context.debugDescription)")
+    } catch {
+      fatalError("Failed to encode \(file) from your data: \(error.localizedDescription)")
+    }
+  }
 }
