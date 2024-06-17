@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		374390DE2C209CA400C601B3 /* DrinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374390DD2C209CA400C601B3 /* DrinkDetailView.swift */; };
 		B38FCEDC2C19E64B00D6F6D3 /* Shake-ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCEDB2C19E64B00D6F6D3 /* Shake-ItApp.swift */; };
 		B38FCEDE2C19E64B00D6F6D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FCEDD2C19E64B00D6F6D3 /* ContentView.swift */; };
 		B38FCEE02C19E64D00D6F6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38FCEDF2C19E64D00D6F6D3 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		374390DD2C209CA400C601B3 /* DrinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailView.swift; sourceTree = "<group>"; };
 		B38FCED82C19E64B00D6F6D3 /* Shake-It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shake-It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38FCEDB2C19E64B00D6F6D3 /* Shake-ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shake-ItApp.swift"; sourceTree = "<group>"; };
 		B38FCEDD2C19E64B00D6F6D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				B38FCF002C1B15E900D6F6D3 /* MoodButton.swift */,
 				B38FCF062C1C384A00D6F6D3 /* SettingsView.swift */,
 				B38FCEE92C19FB5500D6F6D3 /* ColorTheme.swift */,
+				374390DD2C209CA400C601B3 /* DrinkDetailView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374390DE2C209CA400C601B3 /* DrinkDetailView.swift in Sources */,
 				B38FCEF82C1AE8D900D6F6D3 /* BundleCodec.swift in Sources */,
 				B38FCF012C1B15E900D6F6D3 /* MoodButton.swift in Sources */,
 				B38FCEF02C1ACC8600D6F6D3 /* Mood.swift in Sources */,

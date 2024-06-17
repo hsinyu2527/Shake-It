@@ -13,6 +13,7 @@ struct MakingDrinkView: View {
   @Binding var addedMoods: [MoodItem]
   @State private var isShaking = false
   @State private var isPouring = false
+  @State private var navigateToDetail = false
   
   var body: some View {
     VStack {
@@ -79,6 +80,7 @@ struct MakingDrinkView: View {
           
           Button("搖！！") {
             addedMoods.removeAll()
+            navigateToDetail = true
           }
         } message: {
           Text("每天都只能搖一杯心情，\n一旦確認就不可以再更改囉～")
@@ -98,6 +100,9 @@ struct MakingDrinkView: View {
       
       Spacer()
       Spacer()
+    }
+    .navigationDestination(isPresented: $navigateToDetail) {
+        DrinkDetailView(drinkType: "pearl milk tea")
     }
   }
 }
